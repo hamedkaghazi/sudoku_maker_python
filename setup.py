@@ -104,7 +104,7 @@ setup(
     # pip to create the appropriate form of executable for the target platform.
     entry_points={
         'console_scripts': [
-            'sudoku_maker=sudoku_maker:main',
+            'sudoku_maker=sudoku_maker:play',
         ],
     },
 )

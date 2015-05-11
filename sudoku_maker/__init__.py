@@ -1,6 +1,8 @@
+# coding:utf-8
 
-from sudoku_maker import SudokuMaker
+from .sudoku_maker import SudokuMaker
 
-#def main():
-#    """Entry point for the application script"""
-#    print("Call your main application code here")
+
+def main():
+    sudokuMaker = SudokuMaker()
+    sudokuMaker.make()
