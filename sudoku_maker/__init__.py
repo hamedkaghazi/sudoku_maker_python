@@ -4,7 +4,7 @@
 from .sudoku_maker import SudokuMaker
 
 
-def main(trgt_num=9):
+def make(trgt_num=9):
     """ main
 
     Keyword arguments:
@@ -14,4 +14,4 @@ def main(trgt_num=9):
         trgt_num = 9
 
     sudoku_maker = SudokuMaker()
-    sudoku_maker.make()
+    sudoku_maker.make(trgt_num)
