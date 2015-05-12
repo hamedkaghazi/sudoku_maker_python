@@ -1,4 +1,4 @@
 Sudoku Maker
 =======================
 
-`github <https://github.com/hooor/sudoku_maker_python>`_
+`github readme <https://github.com/hooor/sudoku_maker_python>`_
