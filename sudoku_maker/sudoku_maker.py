@@ -71,5 +71,9 @@ class SudokuMaker(object):
 
 # @TODO debug
 # if __name__ == '__main__':
-#     sudoku_maker = SudokuMaker(9)
-#     sudoku_maker.make()
+#     print(sys.argv[1])
+#     trgt_num = int(sys.argv[1])
+#     if trgt_num not in [4, 9, 16, 25, 36, 49, 64, 81, 100]:
+#         trgt_num = 9
+#     sudoku_maker = SudokuMaker(trgt_num)
+#     print(sudoku_maker.make())
