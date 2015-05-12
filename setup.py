@@ -1,3 +1,4 @@
+# coding: utf-8
 """A setuptools based setup module.
 
 See:
@@ -23,9 +24,9 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='1.0.1',
+    version='1.0.3',
 
-    description='SudokuMaker which can make sudoku 4x4, 9x9, 16x16, , 100x100.',
+    description=u'SudokuMaker which can make sudoku 4x4, 9x9, 16x16, …, 100x100.',
     long_description=long_description,
 
     # The project's main homepage.
