@@ -2,7 +2,7 @@
 """ SudokuMaker Class """
 
 import math
-# import random
+import random
 
 
 class SudokuMaker(object):
@@ -14,33 +14,62 @@ class SudokuMaker(object):
     def make(self):
         """ make sudoku function
         """
-        self.__make_source()
-        self.__shuffle_block_row()
-        self.__switch_row_column()
-        self.__shuffle_block_row()
+        sudoku_list = self.__make_source()
+        sudoku_list = self.__shuffle_block(sudoku_list)
+        sudoku_list = self.__shuffle_row_per_block(sudoku_list)
+        sudoku_list = self.__switch_row_column(sudoku_list)
+        sudoku_list = self.__shuffle_block(sudoku_list)
+        sudoku_list = self.__shuffle_row_per_block(sudoku_list)
+        return sudoku_list
 
     def __make_source(self):
-        """ make source
+        """ Return the source list of sudoku
         """
-        # arr = [1, 2, 3, 4]
-        # random.shuffle(arr)
-        # print(arr)
-        g = [[0]*self.__trgt_num for i in range(self.__trgt_num)]
-        print(g)
-        print([0]*self.__trgt_num)
+        init_list = range(1, self.__trgt_num + 1)
 
-    def __shuffle_block_row(self):
-        """ shuffle block row
+        random.shuffle(init_list)
+        source_list = []
+        for i in range(self.__trgt_num):
+            init_list.insert(0, init_list.pop())
+            source_list.append(init_list[:])
+        return source_list
+
+    def __shuffle_block(self, in_list):
+        """ Shuffle Block
         """
-        pass
+        tmp_block = []
+        for i in range(self.__decision_num):
+            start = i * self.__decision_num
+            step = start + self.__decision_num
+            block = in_list[start:step]
+            tmp_block.append(block)
+        random.shuffle(tmp_block)
+        # format
+        ret_list = []
+        for var in tmp_block:
+            ret_list = ret_list + var
+        return ret_list
 
-    def __switch_row_column(self):
+    def __shuffle_row_per_block(self, in_list):
+        """ Shuffle Row per Block
+        """
+        ret_list = []
+        for i in range(self.__decision_num):
+            start = i * self.__decision_num
+            step = start + self.__decision_num
+            block = in_list[start:step]
+            random.shuffle(block)
+            ret_list = ret_list + block
+        return ret_list
+
+    def __switch_row_column(self, in_list):
         """ switch row column
         """
-        pass
+        ret_list = [[r[i] for r in in_list] for i in range(self.__trgt_num)]
+        return ret_list
 
 
 # @TODO debug
-if __name__ == '__main__':
-    sudoku_maker = SudokuMaker(4)
-    sudoku_maker.make()
+# if __name__ == '__main__':
+#     sudoku_maker = SudokuMaker(9)
+#     sudoku_maker.make()
