@@ -13,5 +13,5 @@ def make(trgt_num=9):
     if trgt_num != 9:
         trgt_num = 9
 
-    sudoku_maker = SudokuMaker()
-    sudoku_maker.make(trgt_num)
+    sudoku_maker = SudokuMaker(trgt_num)
+    sudoku_maker.make()

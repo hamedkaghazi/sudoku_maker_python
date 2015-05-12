@@ -2,7 +2,7 @@
 """ SudokuMaker Class """
 
 import math
-import random
+# import random
 
 
 class SudokuMaker(object):
@@ -15,15 +15,17 @@ class SudokuMaker(object):
         """ make sudoku function
         """
         self.__make_source()
+        self.__shuffle_block_row()
+        self.__switch_row_column()
+        self.__shuffle_block_row()
 
     def __make_source(self):
         """ make source
         """
-        #arr = [1, 2, 3, 4]
-        #random.shuffle(arr)
-        #print(arr)
+        # arr = [1, 2, 3, 4]
+        # random.shuffle(arr)
+        # print(arr)
         g = [[0]*self.__trgt_num for i in range(self.__trgt_num)]
-        g = [[1]*self.__trgt_num for i in range(self.__trgt_num)]
         print(g)
         print([0]*self.__trgt_num)
 
