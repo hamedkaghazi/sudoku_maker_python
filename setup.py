@@ -18,7 +18,7 @@ with open(path.join(here, 'DESCRIPTION.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='sudoku_maker_python',
+    name='sudoku_maker',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
@@ -32,7 +32,7 @@ setup(
     url='https://github.com/hooor/sudoku_maker_python',
 
     # Author details
-    author='hooor',
+    author='yokkora',
     author_email='none',
 
     # Choose your license

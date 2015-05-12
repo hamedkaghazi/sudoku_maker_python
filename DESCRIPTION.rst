@@ -1,4 +1,4 @@
-A sample Python project
+Sudoku Maker
 =======================
 
 This is the description file for the project.
