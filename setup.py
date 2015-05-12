@@ -25,7 +25,7 @@ setup(
     # https://packaging.python.org/en/latest/single_source_version.html
     version='1.0.0',
 
-    description='SudokuMaker which can make sudoku 4x4, 9x9, 16x16, …, 100x100.',
+    description='SudokuMaker which can make sudoku 4x4, 9x9, 16x16, , 100x100.',
     long_description=long_description,
 
     # The project's main homepage.
