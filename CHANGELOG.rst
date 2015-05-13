@@ -1,3 +1,7 @@
+Version 1.0.11
+======================
+ - Modified LICENSE file name
+
 Version 1.0.10
 ======================
  - Modified description
