@@ -25,7 +25,7 @@ class SudokuMaker(object):
     def __make_source(self):
         """ Return the source list of sudoku
         """
-        init_list = range(1, self.__trgt_num + 1)
+        init_list = list(range(1, self.__trgt_num + 1))
 
         random.shuffle(init_list)
         source_list = []
