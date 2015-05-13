@@ -1,3 +1,7 @@
+Version 1.0.12
+======================
+ - Can exec version 3.2, 3,3, 3,4
+
 Version 1.0.11
 ======================
  - Modified LICENSE file name
