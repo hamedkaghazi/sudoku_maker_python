@@ -1,6 +1,6 @@
 # SudokuMaker
 
-https://travis-ci.org/hooor/sudoku_maker_python.svg?branch=master
+[![Build Status](https://travis-ci.org/hooor/sudoku_maker_python.svg?branch=master)](https://travis-ci.org/hooor/sudoku_maker_python)
 
 SudokuMaker which can make sudoku 4x4, 9x9, 16x16, …, 100x100.
 
