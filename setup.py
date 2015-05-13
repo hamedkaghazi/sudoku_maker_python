@@ -17,6 +17,8 @@ here = path.abspath(path.dirname(__file__))
 # Get the long description from the relevant file
 with open(path.join(here, 'DESCRIPTION.rst'), encoding='utf-8') as f:
     long_description = f.read()
+with open(path.join(here, 'CHANGELOG.rst'), encoding='utf-8') as cf:
+    long_description = long_description + cf.read()
 
 setup(
     name='sudoku_maker',
@@ -24,7 +26,7 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='1.0.6',
+    version='1.0.10',
 
     description=u'SudokuMaker which can make sudoku 4x4, 9x9, 16x16, …, 100x100.',
     long_description=long_description,

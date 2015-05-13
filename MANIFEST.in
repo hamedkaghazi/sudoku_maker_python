@@ -8,3 +8,4 @@ include DESCRIPTION.rst
 include sudoku_maker/*.dat
 
 include data/*
+include LICENSE
